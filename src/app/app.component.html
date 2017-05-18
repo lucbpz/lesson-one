@@ -1,3 +1,20 @@
-<h1>
-  {{title}}
-</h1>
+<!--<p>
+  <contentful-one-entry [data]="data"></contentful-one-entry>
+</p>-->
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+  <a class="navbar-brand" routerLink="/posts">Lesson One</a>
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/posts">Home</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/entry">Single Post</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/about">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
