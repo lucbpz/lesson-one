@@ -12,27 +12,36 @@ import { RouterModule, Router, Routes } from '@angular/router';
 import { ListPostComponent } from './pages/list-post/list-post.component';
 import { SinglePostComponent } from './pages/single-post/single-post.component';
 
+import { DisqusModule } from 'angular2-disqus';
+
+// import '../assets/js/clean-blog.js';
+
 const appRoutes: Routes = [
-{ path: 'posts', component: ListPostComponent },
-{ path: 'entry/:id', component: SinglePostComponent },
-{ path: 'about', redirectTo: '/about' },
-{ path: '',
-redirectTo: '/posts',
-pathMatch: 'full'
-}
+  { path: 'posts', component: ListPostComponent },
+  { path: 'entry/:id', component: SinglePostComponent },
+  { path: 'random', redirectTo: '/random' },
+  { path: 'business', redirectTo: '/business' },
+  { path: 'about', redirectTo: '/about' },
+  {
+    path: '',
+    redirectTo: '/posts',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentfulOneEntryComponent,
-    ListPostComponent
+    ListPostComponent,
+    SinglePostComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    DisqusModule
   ],
   providers: [ContentfulService],
   bootstrap: [AppComponent]

@@ -4,7 +4,8 @@ import { ContentfulService } from '../../services/contentful.service';
 @Component({
     selector: 'list-post',
     templateUrl: './list-post.component.html',
-    styleUrls: ['./list-post.component.css'],
+    styleUrls: ['../../../css/clean-blog.min.css',
+  '../../../css/clean-blog.css']
 })
 export class ListPostComponent {
 

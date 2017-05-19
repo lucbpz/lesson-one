@@ -1,0 +1,13 @@
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2 class="section-heading">{{data?.fields?.title}}</h2>
+                <p>{{data?.fields?.body}}</p>
+                <blockquote>{{data?.sys.createdAt}}</blockquote>
+                <disqus-thread [page-identifier]="1" [page-url]="1"></disqus-thread>
+                <!-- TODO insertar comentarios DISQUS -->
+            </div>
+        </div>
+    </div>
+</article>

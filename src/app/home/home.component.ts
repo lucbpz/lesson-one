@@ -6,6 +6,8 @@ import { ListPostComponent } from "app/pages/list-post/list-post.component";
 @Component({
     selector: 'home',
     templateUrl: 'app/home/home.component.html',
+    styleUrls: ['../css/clean-blog.min.css',
+  '../css/clean-blog.css']
 })
 
 export class HomeComponent {
@@ -26,7 +28,7 @@ export class HomeComponent {
         //     this.posts = data.json();
         //     console.log(this.posts);
         // });
-        console.log(this.listPost.posts);
+        // console.log(this.listPost.posts);
 
     }
 

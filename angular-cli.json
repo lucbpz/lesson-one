@@ -18,11 +18,13 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
+        "../css/clean-blog.min.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": ["assets/js/clean-blog.min.js"],
+      "environmentSource": "environments/environment.ts",
       "environments": {
-        "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }

@@ -16,6 +16,7 @@ export class ContentfulService {
     getEntryById(id: string): Observable<any> {
         const query = `/entries/${id}`;
         const url = `${this.apiUrl}${query}?access_token=${this.apiKey}`;
+        console.log(url);
         return this.http.get(url);
     }
 

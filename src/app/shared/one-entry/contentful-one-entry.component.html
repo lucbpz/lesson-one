@@ -1,11 +1,16 @@
-    <!-- Post Content -->
-    <article>
-        <div class="container">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="card">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p>{{data?.fields?.title}}</p>
+                    <h2 class="section-heading">{{data?.fields?.title}}</h2>
                     <p>{{data?.fields?.body}}</p>
+                    <blockquote>{{data?.sys.createdAt}}</blockquote>
+                    <a class="btn btn-primary" [routerLink]="['/entry', data.sys.id ]">Go to post</a>
+
                 </div>
             </div>
         </div>
-    </article>
+    </div>
+</article>
