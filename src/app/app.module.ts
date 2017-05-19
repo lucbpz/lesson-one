@@ -11,6 +11,7 @@ import { RouterModule, Router, Routes } from '@angular/router';
 
 import { ListPostComponent } from './pages/list-post/list-post.component';
 import { SinglePostComponent } from './pages/single-post/single-post.component';
+import { RandomPostComponent } from './pages/random/random-post.component';
 
 import { DisqusModule } from 'angular2-disqus';
 
@@ -19,7 +20,7 @@ import { DisqusModule } from 'angular2-disqus';
 const appRoutes: Routes = [
   { path: 'posts', component: ListPostComponent },
   { path: 'entry/:id', component: SinglePostComponent },
-  { path: 'random', redirectTo: '/random' },
+  { path: 'random', component: RandomPostComponent },
   { path: 'business', redirectTo: '/business' },
   { path: 'about', redirectTo: '/about' },
   {
@@ -35,6 +36,7 @@ const appRoutes: Routes = [
     ContentfulOneEntryComponent,
     ListPostComponent,
     SinglePostComponent,
+    RandomPostComponent
   ],
   imports: [
     BrowserModule,
