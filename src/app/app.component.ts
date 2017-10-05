@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['../css/clean-blog.min.css',
-  '../css/clean-blog.css']
+  '../css/clean-blog.css',
+  './app.component.css']
 })
 export class AppComponent {
   title = 'app works!';
